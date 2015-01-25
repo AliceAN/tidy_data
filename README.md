@@ -30,7 +30,7 @@ R packages used
 - dplyr
 
 One data set is created by binding the test and train files using row bind and then column bind.
-For each measurement only the mean and standard deviation are extract using grep. Using information on the activity.txt file the numeric activity labels numbered 1 through 6 are replaced with descriptive names. Using the features.txt file descriptive variable names are extracted, cleaned and set as the variable names for the vector features for columns 1 through 86, while the last two columns are named subject and activity. 
+For each measurement only the mean and standard deviation are extract using grep. The numeric activity labels numbered 1 through 6 are replaced with descriptive names that describe the activity from the activity.txt file. Using the features.txt file descriptive variable names that match the respective columns are extracted, cleaned and set as the variable names for the vector features for columns 1 through 86. The last two columns are renamed subject and activity and rearranged to be the first two columns. 
 
 The data is arranged by activity and subject. Because the arrangement was done after the activity names replaced the numeric activity label, LAYING is at the head of the dataset while WALKING_UPSTAIRS is at the tail. 
 
