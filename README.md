@@ -3,7 +3,7 @@
 Datascience specialization track
 by AliceAN 
 
-######run_analysis
+######tidydata
 The tidydata set was created from the UCI HAR Dataset using the code in run_analysis.R file.
 The summary contains the mean of 86 vector features for each subject and activity. 
 There are 30 subjects in the experiment and 6 activities
@@ -16,13 +16,18 @@ There are 30 subjects in the experiment and 6 activities
 
 The result is a table with 180 observations of 88 variables 
 
+This is tidy data because
+
+- Each variable has it's own column.
+- Each row is an observation.
+
 ***
+######run_analysis
+
 R packages used 
 - data.table
 - plyr
 - dplyr
-
-***
 
 One data set is created by binding the test and train files using row bind and then column bind.
 For each measurement only the mean and standard deviation are extract using grep. Using information on the activity.txt file the numeric activity labels numbered 1 through 6 are replaced with descriptive names. Using the features.txt file descriptive variable names are extracted, cleaned and set as the variable names for the vector features for columns 1 through 86, while the last two columns are named subject and activity. 
